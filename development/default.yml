@@ -1,0 +1,14 @@
+---
+- name: Development system
+  hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: yes
+  roles:
+    - role: vagrant-system
+      vars:
+        vagrant_username: vagrant
+        vagrant_group: vagrant
+        vagrant_password: "$1$booW/uzn$AB3hLhngw5B0TkNd5L1ZQ/"
+    - role: system-configure
+    - role: system-clean
