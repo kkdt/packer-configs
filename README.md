@@ -35,5 +35,5 @@ git clone https://github.com/kkdt/packer-configs.git
 
 cd packer-virtualbox
 
-./build.sh --secrets config/secrets.pkrvars.hcl --details --os rhel8.5 --configs ~/packer-configs/development
+./build.sh --secrets config/secrets.pkrvars.hcl --details --os rhel8.5 --configs ~/packer-configs/box/development
 ```
