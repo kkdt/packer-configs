@@ -27,6 +27,8 @@ vm_packages = [
   "libXt",
   "make",
   "nfs-utils",
+  "nodejs",
+  "npm",
   "openssl-devel",
   "perl",
   "systemd-container",

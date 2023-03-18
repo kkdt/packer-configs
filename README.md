@@ -23,8 +23,10 @@ the Packer project.
      - The Ansible Galaxy requirements file containing `collections` and `roles` attributes
 1. default.yml
      - The Ansible playbook to use
-   
-## Sample Build
+
+## Builds
+
+### Setup
 
 ```shell
 cd $HOME
@@ -34,6 +36,20 @@ git clone https://github.com/kkdt/packer-virtualbox.git
 git clone https://github.com/kkdt/packer-configs.git
 
 cd packer-virtualbox
+```
 
-./build.sh --secrets config/secrets.pkrvars.hcl --details --os rhel8.5 --configs ~/packer-configs/box/development
+### dev6
+
+```shell
+cd $HOME/packer-virtualbox
+
+./build.sh --secrets config/secrets.pkrvars.hcl --os rhel6.9 --details --configs ~/Development/projects/packer-configs/box/dev6 
+```
+
+### dev8
+
+```shell
+cd $HOME/packer-virtualbox
+
+./build.sh --secrets config/secrets.pkrvars.hcl --os rhel8.7 --details --configs ~/Development/projects/packer-configs/box/dev8
 ```
