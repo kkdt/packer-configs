@@ -1,5 +1,23 @@
 config_id = "kkdt/dev8"
 server_name = "dev8"
+
+# Red Hat Modules
+# - Format: module:stream/profile, e.g. nodejs:14/common
+# - Command: yum module list <module>
+
+#[root@dev8 ~]# yum module list nodejs
+#Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+#Name            Stream       Profiles                                       Summary
+#nodejs          10 [d][e]    common [d], development, minimal, s2i          Javascript runtime
+#nodejs          12           common [d], development, minimal, s2i          Javascript runtime
+#nodejs          14           common [d], development, minimal, s2i          Javascript runtime
+#nodejs          16           common [d], development, minimal, s2i          Javascript runtime
+#nodejs          18           common [d], development, minimal, s2i          Javascript runtime
+
+vm_modules = [
+  "nodejs:14"
+]
+
 vm_packages = [
   "@base",
   "@core",
@@ -27,7 +45,6 @@ vm_packages = [
   "libXt",
   "make",
   "nfs-utils",
-  "nodejs",
   "npm",
   "openssl-devel",
   "perl",
