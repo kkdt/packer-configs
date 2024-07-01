@@ -25,7 +25,6 @@ vm_packages = [
   "autoconf",
   "buildah",
   "bzip2",
-  "container-commons",
   "createrepo",
   "elfutils-libelf-devel",
   "gcc",

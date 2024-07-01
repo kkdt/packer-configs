@@ -1,5 +1,5 @@
-config_id = "kkdt/dev6"
-server_name = "dev6"
+config_id = "kkdt/rhel6.9"
+server_name = "rhel6.9"
 vm_packages = [
   "@base",
   "@core",
