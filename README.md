@@ -43,7 +43,7 @@ cd packer-virtualbox
 ```shell
 cd $HOME/packer-virtualbox
 
-./build.sh --secrets config/secrets.pkrvars.hcl --os rhel6.9 --details --configs ~/Development/projects/packer-configs/box/dev6
+./build.sh --secrets config/secrets.pkrvars.hcl --os rhel6.9 --details --configs ~/Development/projects/packer-configs/box/rhel6.9
 ```
 
 ### rhel8.6
