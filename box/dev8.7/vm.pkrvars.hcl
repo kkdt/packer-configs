@@ -1,5 +1,5 @@
-config_id = "kkdt/dev8"
-server_name = "dev8"
+config_id = "kkdt/rhel8.7"
+server_name = "rhel8.7"
 
 # Red Hat Modules
 # - Format: module:stream/profile, e.g. nodejs:14/common
