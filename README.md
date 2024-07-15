@@ -38,7 +38,15 @@ git clone https://github.com/kkdt/packer-configs.git
 cd packer-virtualbox
 ```
 
-### dev6
+### rhel-podman
+
+```shell
+cd $HOME/packer-virtualbox
+
+./build.sh --secrets config/secrets.pkrvars.hcl --os rhel8.7 --details --configs ~/Development/projects/packer-configs/box/rhel-podman
+```
+
+### rhel6.9
 
 ```shell
 cd $HOME/packer-virtualbox
