@@ -19,7 +19,7 @@
         - rhsm_password is defined
         - rhsm_password|length > 0
 
-- name: rhel8.6
+- name: rhel8.6-desktop
   hosts: all
   become: yes
   become_method: sudo
